@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ol id="test-list">
+    <li class="lang">Scheme</li>
+    <li class="lang">JavaScript</li>
+    <li class="lang">Python</li>
+    <li class="lang">Ruby</li>
+    <li class="lang">Haskell</li>
+</ol>
+<script type="text/javascript">
+	
+var oOl = document.getElementById('test-list');
+var oLi = oOl.getElementsByTagName('li');
+var arr = [];
+for(let i=0; i<oLi.length; i++){
+    arr.push(oLi[i].innerHTML);
+}
+alert(arr);
+</script>
+</body>
+</html>
